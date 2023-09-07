@@ -24,6 +24,7 @@ function rock(){
         console.log(yourScore);
         console.log(opponentScore)
     }
+    picks(choice,opponent);
     score();
     checkScore();
     
@@ -55,6 +56,7 @@ function paper(){
     }
     score();
     checkScore();
+    picks(choice,opponent);
 }
 function scissors(){
     let choice = 3;
@@ -80,6 +82,7 @@ function scissors(){
     }
     score();
     checkScore();
+    picks(choice,opponent);
 }
 function getRandom(min,max){
     return Math.floor(Math.random() * (max-min+1) + min)
@@ -124,6 +127,28 @@ function startGame(){
     opponentScore = 0;
     score();
 
+}
+function picks(choice,opponent){
+    if(choice === 1){
+        document.getElementById("yourPick").innerHTML = "✊";
+    }
+    else if (choice === 2)
+    {
+        document.getElementById("yourPick").innerHTML = "🖐";
+    }
+    else {
+        document.getElementById("yourPick").innerHTML = "✌️";
+    }
+    if (opponent === 1){
+        document.getElementById("enemyPick").innerHTML = "✊";
+    }
+    else if (opponent === 2){
+        document.getElementById("enemyPick").innerHTML = "🖐";
+    }
+    else {
+        
+        document.getElementById("enemyPick").innerHTML = "✌️";
+    }
 }
 
 

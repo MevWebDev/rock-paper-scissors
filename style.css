@@ -5,6 +5,9 @@ body{
 button{
     padding: 30px;
     font-size: 50px;
+    border-color: #efefef;
+    border:1px solid;
+    border-radius: 10px;
     
 }
 
@@ -40,4 +43,27 @@ button{
 #result{
     margin-top:10px;
     font-size: 30px;
+}
+.tab{
+    display: flex;
+    gap:50px;
+}
+.pick{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pick p{
+    background-color: #efefef;
+    width:125px;
+    height: 120px;
+    font-size: 50px;
+    border-color: #747474;
+    border: 1px solid;
+    border-radius: 10px;
+    margin:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
