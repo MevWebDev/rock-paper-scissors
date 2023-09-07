@@ -7,37 +7,45 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     </head>
     <body>
-        <div class="menu"><h1>Welcome to Rock Paper Scissors game</h1>
-            <p id="madeby">Made by <a href ="https://mev.pxseu.com" target="_blank" >Mev</a></p>
+        <div class="header"><h1>Welcome to Rock Paper Scissors game</h1></div>
+        <div class="resultContainer">
+            <div id="resultTitle">First to 5 wins!</div>
+            
+        
+        <div class="tab">
+            
+            <div class="pick">
+                <h3>You picked</h3>
+                <p id="yourPick">?</p>
+            </div>
+                
+            <div class="pick">
+                <h3>Enemy picked</h3>
+                <p id="enemyPick">?</p>
+            </div>
+            
+        </div>
+        <div class = "score">
+            <div id="yourScore">0</div>
+            <p>-</p>
+            <div id="opponentScore">0</div>
+        </div>
+        <div id="result"></div>
+    </div>
+        <div class="menu">
+             
         <h2>Choose your weapon</h2>
         <div class="buttons">
         <button onclick="rock()" class="rock">✊</button>
         <button onclick = "paper()" class="paper">🖐</button>
         <button onclick="scissors()" class="scissors">✌️</button>
     </div>
+    <h3 id="madeby">Made by <a href ="https://mev.pxseu.com" target="_blank" >Mev</a></h3>
     </div>
-    <div class="resultContainer">
-        <div id="resultTitle">Who will win?</div>
-        <div class = "score">
-        <div id="yourScore">0</div>
-        <div id="opponentScore">0</div>
-    </div>
-    <div id="result"></div>
-    <div class="tab">
-        
-        <div class="pick">
-            <h3>You picked</h3>
-            <p id="yourPick"></p>
-        </div>
-            
-        <div class="pick">
-            <h3>Enemy picked</h3>
-            <p id="enemyPick"></p>
-        </div>
-    </div>
-</div>
+
     
         
         

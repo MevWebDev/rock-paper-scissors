@@ -4,85 +4,85 @@ const text = "Who will win?";
 
 function rock(){
     let choice = 1;
-    console.log(choice);
+    
     let opponent = getRandom(1,3)
-    console.log(opponent)
+    
     if(opponent === 1){
-        console.log(yourScore);
-        console.log(opponentScore)
+        
+        
         
     }
     else if (opponent === 2){
         
         opponentScore += 1;
-        console.log(yourScore);
-        console.log(opponentScore)
+        
+        
     }
     else {
         
         yourScore += 1;
-        console.log(yourScore);
-        console.log(opponentScore)
+        
+        
     }
+    
     picks(choice,opponent);
     score();
     checkScore();
-    
     
 
 }
 function paper(){
     let choice = 2;
-    console.log(choice);
+    
     let opponent = getRandom(1,3)
-    console.log(opponent)
+    
     if(opponent === 1){
         yourScore += 1;
-        console.log(yourScore);
-        console.log(opponentScore)
+        
+        
         
     }
     else if (opponent === 2){
         
         
-        console.log(yourScore);
-        console.log(opponentScore)
+        
+        
     }
     else {
         
         opponentScore += 1;
-        console.log(yourScore);
-        console.log(opponentScore)
+        
+        
     }
+    picks(choice,opponent);
     score();
     checkScore();
-    picks(choice,opponent);
 }
 function scissors(){
     let choice = 3;
-    console.log(choice);
+    
     let opponent = getRandom(1,3)
-    console.log(opponent)
+    
     if(opponent === 1){
         
         opponentScore += 1;
-        console.log(yourScore);
-        console.log(opponentScore)
+        
+        
         
     }
     else if (opponent === 2){
         
         yourScore += 1;
-        console.log(yourScore);
-        console.log(opponentScore)
+        
+        
     }
     else {
-        console.log(yourScore);
-        console.log(opponentScore)
+        
+        
     }
+    picks(choice,opponent);
     score();
     checkScore();
-    picks(choice,opponent);
 }
 function getRandom(min,max){
     return Math.floor(Math.random() * (max-min+1) + min)
@@ -95,15 +95,14 @@ function checkScore(){
     if (yourScore === 5){
         
         
-        document.getElementById("result").innerHTML = "You won";
-        document.getElementById("result").style.color = "green";
+        document.getElementById("result").innerHTML = "You won :D";
         startGame();
         
     }
     else if(opponentScore === 5){
         
-        document.getElementById("result").style.color = "red";
-        document.getElementById("result").innerHTML = "You lost";
+        
+        document.getElementById("result").innerHTML = " You lost :(";
         startGame();       
     }
     else{
@@ -125,6 +124,8 @@ function startGame(){
     
     yourScore = 0;
     opponentScore = 0;
+    document.getElementById("yourPick").innerHTML = "?"
+    document.getElementById("enemyPick").innerHTML = "?";
     score();
 
 }
