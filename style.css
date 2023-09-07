@@ -5,7 +5,9 @@ body{
 button{
     padding: 30px;
     font-size: 50px;
+    
 }
+
 .menu{
     display:flex;
     flex-direction: column;
