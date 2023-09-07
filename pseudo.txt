@@ -1,0 +1,6 @@
+///1. Create 3 buttons rock paper scissors
+///2. create 3 conditions
+///2.1 scissors < rock, rock < paper, paper < scissors
+///3. randomly generate opponents choice
+///4. check conditions
+5.write score
