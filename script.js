@@ -119,7 +119,6 @@ function score(){
 }
 function startGame(){
     
-    document.getElementById("resultTitle").innerHTML = text;
     
     yourScore = 0;
     opponentScore = 0;
